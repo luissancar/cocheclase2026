@@ -6,17 +6,9 @@ REM  PARÁMETROS: REPO_URL y COMMIT_MSG
 REM ==============================
 REM Uso:
 REM   subir_unity_github.bat https://github.com/tu_usuario/tu_repo.git "Mensaje de commit"
+"
 
-if "%~1"=="" (
-    echo [ERROR] Debes pasar la URL del repositorio como parametro.
-    echo.
-    echo Uso:
-    echo   %~nx0 https://github.com/tu_usuario/tu_repo.git "Mensaje de commit opcional"
-    pause
-    exit /b 1
-)
-
-set "REPO_URL=%~1"
+set "REPO_URL= https://github.com/luissancar/cocheclase2026.git"
 
 if "%~2"=="" (
     set "COMMIT_MSG=Commit automatico del proyecto Unity"
